@@ -20,7 +20,9 @@ public class MyFrame extends JFrame {
     String day;
     String date;
     String time;
-    MyFrame(){
+
+    MyFrame() {
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("My Clock Program");
         this.setLayout(new FlowLayout());
@@ -52,12 +54,13 @@ public class MyFrame extends JFrame {
         setTime();
 
     }
+
     /*
     * This method gets the current day, date, and time
     * It utilizes a while loop to constantly update the current time
     * The sleep function pauses the loop so the method updates roughly every second
     */
-    public void setTime(){
+    public void setTime() {
 
         while(true) {
             day = dayFormat.format(Calendar.getInstance().getTime());
@@ -75,8 +78,5 @@ public class MyFrame extends JFrame {
                 throw new RuntimeException(e);
             }
         }
-
-
-
     }
 }
