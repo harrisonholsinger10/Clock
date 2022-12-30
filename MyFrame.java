@@ -7,6 +7,7 @@ import java.util.Calendar;
 * Harrison Holsinger
 * This program displays the current day, date, and time
 */
+
 public class MyFrame extends JFrame {
 
     SimpleDateFormat dayFormat;
